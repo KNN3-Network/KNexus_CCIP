@@ -125,7 +125,7 @@ export default function useKnexusContract() {
         "13264668187771770619",
         "0x044e7b702b30098BfcF93fb69ec9CAb734050516",
         1,
-        3,
+        6,
         1,
         "0x",
       );
