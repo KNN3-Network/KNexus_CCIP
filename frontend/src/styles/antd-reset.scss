@@ -1,0 +1,120 @@
+$mainColor: #d5f95f;
+$textColor: #fff06d;
+
+.ant-carousel .slick-dots li button {
+  background: #c7c9d8;
+  border: 2px solid #000;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #000;
+  border: 2px solid #000;
+}
+
+.ant-carousel .slick-dots-bottom {
+  bottom: -10px;
+}
+
+.creat-upload .ant-upload {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.creat-upload .ant-upload:focus {
+  border-color: $mainColor !important;
+}
+
+.creat-upload .ant-upload:hover {
+  border-color: $mainColor !important;
+}
+
+.ant-select-selector {
+  border-width: 2px !important;
+}
+
+.ant-select-selector:hover {
+  border-color: $mainColor !important;
+  border-width: 2px !important;
+}
+
+.ant-select-selector:focus {
+  border-color: $mainColor !important;
+  border-width: 2px !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: $mainColor !important;
+}
+
+.ant-select-item-option-active {
+  background-color: $mainColor !important;
+}
+
+.ant-cascader-menu-item:hover {
+  background-color: $mainColor !important;
+}
+
+.ant-cascader-menu-item:focus {
+  background-color: $mainColor !important;
+}
+
+.ant-cascader-menu-item-active {
+  background-color: $mainColor !important;
+}
+
+.ant-cascader-menu-item:focus {
+  background-color: $mainColor !important;
+}
+
+.ant-cascader-menu-item-active {
+  background-color: $mainColor !important;
+}
+
+.ant-popover {
+  padding: 0;
+  z-index: 9999;
+}
+
+.ant-popover-arrow {
+  display: none !important;
+}
+
+.ant-popover-inner {
+  border: 2px solid #ccc;
+}
+
+.ant-popover-inner-content {
+  padding: 0 10px 0 10px;
+}
+
+.defult-spin {
+  .ant-spin-dot-item {
+    background: #000;
+  }
+  .ant-spin-text {
+    color: #000;
+  }
+}
+
+.ant-input {
+  background: inherit;
+}
+
+.ant-select-dropdown {
+  z-index: 99999;
+}
+
+.header-input input {
+  background: rgba(255, 255, 255, 0) !important;
+  color: #fff;
+}
+.header-input input::placeholder {
+  color: #fff;
+}
+.ant-checkbox-inner {
+  background-color: $mainColor !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  border-color: #000;
+}

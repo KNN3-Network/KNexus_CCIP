@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: "Eurostile";
+  font-weight: 400;
+  src: url("../../public/fonts/EurostileBold.ttf");
+}
+
+@font-face {
+  font-family: "StretchPro";
+  font-weight: 400;
+  src: url("../../public/fonts/StretchPro.otf");
+}
+
+@font-face {
+  font-family: "Swis721BT";
+  font-weight: 400;
+  src: url("../../public/fonts/Swiss721BT-BoldExtended.otf");
+}
+
+@font-face {
+  font-family: "Swis721hv";
+  font-weight: 400;
+  src: url("../../public/fonts/Swiss721BT-Heavy.otf");
+}
+
+html,
+body,
+#__next {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+input::-webkit-input-placeholder {
+  color: "#9199a6";
+}
+
+#chakra-toast-manager-top-right {
+  margin-top: 60px;
+}
+
+.css-hhland {
+  white-space: noWrap;
+}
+
+/* ::-webkit-scrollbar { 
+	display: visible; 
+}
+
+::-webkit-scrollbar {
+	visibility: visible !important;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: #d5f95f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d5f95f;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #ccc;
+  display: none;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+.show-scroll::-webkit-scrollbar-add-button {
+  display: none;
+}
+
+::-webkit-scrollbar-button:end:increment,
+.show-scroll::-webkit-scrollbar-sub-button {
+  display: none;
+}
+
+.recoverAni {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  animation: recover 1.2s linear 0.1s forwards;
+}
+
+.enterColorAni {
+  width: 0;
+  animation: enterColor 0.3s linear 0s forwards;
+}
+
+.leaveColorAni {
+  width: 100%;
+  animation: leaveColor 0.2s linear 0s forwards;
+}
+
+.enterTextColorAni {
+  animation: enterTextColor 0.4s linear 0s forwards;
+}
+
+.leaveTextColorAni {
+  animation: leaveTextColor 0.4s linear 0s forwards;
+}
+
+@keyframes recover {
+  from {
+    top: 100vh;
+  }
+
+  to {
+    top: 0vh;
+  }
+}
+
+@keyframes enterColor {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes leaveColor {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+@keyframes enterTextColor {
+  from {
+    opacity: 0.2;
+    color: #fff;
+  }
+
+  to {
+    opacity: 1;
+    color: #000;
+  }
+}
+
+@keyframes leaveTextColor {
+  from {
+    opacity: 0.2;
+    color: #000;
+  }
+
+  to {
+    opacity: 1;
+    color: #fff;
+  }
+}
+
+.card-shadow {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+:root {
+  --aspect-ratio: calc(3 / 4); /* 3:1的宽高比例 */
+}
+
+/* marketplace and userinfo page style box grid style */
+.card-grid-column {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: repeat(
+    auto-fill,
+    minmax(216px, 1fr * var(--aspect-ratio))
+  );
+}
+
+/* create page style box grid style */
+.card-grid-column-create-style {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: repeat(
+    auto-fill,
+    minmax(180px, 1fr * var(--aspect-ratio))
+  );
+}
+
+/* home page style box grid style */
+.card-grid-column-home {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: repeat(2, 216px);
+  max-height: calc((216px + 10px) * 2);
+  overflow: hidden;
+}
+
+/* 溢出滚动 */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee > * {
+  animation: marquee 3s linear infinite both alternate;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(min(100cqw - 100%, 0px));
+  }
+}
+
+.bg-overSize {
+  background-size: 100% 100%;
+}
+
+.ant-spin-nested-loading {
+  width: 100%;
+  height: 100%;
+}
+
+.head-linear {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.nft-card-linear {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.ant-radio-checked .ant-radio-inner {
+  background: #000 !important;
+}
+
+.ant-radio-inner {
+  border-color: #000 !important;
+}
+
+.grid-container {
+  column-count: auto;
+  column-width: 260px;
+  /* column-gap: 20px;
+	margin: 20px; */
+}
+
+.grid-item {
+  margin-bottom: 20px;
+  /*这两个属性，解决内容被隔断*/
+  height: 100%;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+
+.create-cascader {
+  width: calc(40vw - 40px);
+  height: 300px;
+}
+.create-cascader .ant-cascader-menus {
+  width: calc(40vw - 40px);
+  height: 300px;
+}
+.create-cascader .ant-cascader-menus .ant-cascader-menu {
+  height: 100%;
+}
+.home-slide .slick-list {
+  border-radius: 20px;
+}
